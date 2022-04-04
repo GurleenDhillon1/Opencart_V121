@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="opencartsuit" >
+
+<listeners>
+<listener class-name="utilities.Extentreportmanager"/>
+</listeners>
+<test name="opencarttest" >
+<parameter name="browser" value="chrome"/>
+ <groups>
+     <run>
+       <include name="master"/> 
+     </run>
+  </groups>  
+<classes>
+<class name="testcases.TC_001Accountregistration"/>
+<class name="testcases.TC_login"/>
+<!--<class name="testcases.TC_loginDDt"/>-->
+</classes>
+
+</test>
+
+</suite>
